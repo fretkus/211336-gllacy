@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Анна Терехова](https://up.htmlacademy.ru/htmlcss/15/user/211336).
-* Наставник: `Неизвестно`.
+* Наставник: [Владимир Цибизов](https://htmlacademy.ru/profile/vlad_blow).
 
 ---
 
