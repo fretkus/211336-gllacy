@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -30,23 +30,28 @@
           <div class="search popup">
             <div class="search-loupe">search
               <form class="search-form" action="#" method="get">
-                <input type="text" name="search" placeholder="Что ищем?" required="">
+                <input type="search" name="search" placeholder="Что ищем?" required="">
+                <label for="search">Что ищем?</label>
               </form>
             </div>
           </div>
-          <div class="enter popup">
+          <div class="enter">
             <a class="enter-link" href="#">Вход</a>
-            <form action="#" method="post">
-              <input type="email" name="email" placeholder="Электронная почта" required>
-              <input type="password" name="password" placeholder="Пароль" required>
-              <button class="enter-btn" type="submit">Войти</button>
-              <div class="enter-form">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </div>
-            </form>
+            <div class="login-form">
+              <form action="#" method="post">
+                <input type="email" name="email" placeholder="Электронная почта" required>
+                <label for="email">Электронная почта</label>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <label for="password">Пароль</label>
+                <button class="enter-btn" type="submit">Войти</button>
+                <div class="enter-form">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="cart popup">
+          <div class="cart">
             <a class="cart-link-full" href="#">2 товара</a>
             <div class="cart-popup">
               <table>
