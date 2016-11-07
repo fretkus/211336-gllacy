@@ -1953,12 +1953,40 @@ legend {
   top: -20px;
 }
 
-.filters-one select {
+.filters-one {
+  position: relative;
+}
+
+.sorting-select {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.sorting-select legend {
+  margin-left: 15px;
+}
+
+.sorting-select select {
+  width: 193px;
+  padding: 9px 12px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  max-width: 160px;
+  color: #ffffff;
+  background: #a9bab0 url("../img/sprite.png") no-repeat 153px -1318px;
+  border-radius: 50px;
+  border: none;
   outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.sorting-select select:hover {
+  position: relative;
+  color: #323232;
+  background: #ffffff url("../img/sprite.png") no-repeat 105px -1318px;
 }
 
 .filters-two select {
@@ -1981,7 +2009,7 @@ legend {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  padding: 3px 5px 0 38px;
+  padding: 2px 5px 0 38px;
 }
 
 .fatness-options label::before {
@@ -2051,7 +2079,7 @@ input[type="checkbox"]:checked + label::before {
   display: inline-block;
   vertical-align: top;
   width: 215px;
-  padding-top: 25px;
+  padding-top: 26px;
   margin-left: 13px;
   margin-right: 13px;
 }
@@ -2060,7 +2088,7 @@ input[type="checkbox"]:checked + label::before {
   position: relative;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
-  padding: 16px 15px 18px 15px;
+  padding: 15px 15px 18px 15px;
 }
 
 .price-controls {
@@ -2111,7 +2139,7 @@ input[type="checkbox"]:checked + label::before {
 .filters-btn {
   display: inline-block;
   vertical-align: top;
-  padding: 7px 28px;
+  padding: 7px 29px;
   margin-top: 33px;
   margin-left: 10px;
   font-size: 16px;
@@ -2146,17 +2174,78 @@ input[type="checkbox"]:checked + label::before {
 /* pagination */
 
 .pagination {
-  padding-bottom: 30px;
+  position: relative;
+  padding-bottom: 25px;
   margin-top: 90px;
   margin-bottom: 28px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   text-align: right;
+  font-size: 0;
   outline: 1px solid yellow;
 }
 
+.pagination a,
+.pagination-current {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 4px 9px;
+  outline: 1px solid red
+}
 
+.pagination a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border: none;
+}
 
+.pagination a:focus {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
+  border-radius: 50%;
+  border: none;
+}
 
+.pagination-current {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
+  border-radius: 50%;
+}
 
+.pagination a:first-child,
+.pagination a:last-child {
+  font-size: 0;
+  width: 27px;
+  height: 27px;
+  padding: 0;
+}
+
+.pagination-prev::before {
+  content: "";
+	position: absolute;
+  top: 0;
+	right: 164px;
+	width: 27px;
+	height: 27px;
+	background: url("../img/sprite.png") no-repeat -5px -864px;
+  opacity: 0.2;
+  outline: 1px solid red;
+}
+
+.pagination-next::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 27px;
+  height: 27px;
+  background: url("../img/sprite.png") no-repeat -5px -908px;
+  opacity: 1;
+  outline: 1px solid red
+}
 
 /* end pagination */

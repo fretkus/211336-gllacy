@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">
       <div class="container clearfix">
-        <img src="img/logo.png" width="154" height="64" alt="Gllacy Shop">
+        <a href="index.html"><img src="img/logo.png" width="154" height="64" alt="Gllacy Shop"></a>
         <nav class="main-navigation">
           <ul class="navigation">
             <li class="dropdown"><a class="current-inner-page" href="#">Каталог</a>
@@ -93,14 +93,16 @@
       <div class="options">
         <form class="filters" action="#" method="post">
           <div class="filters-one">
-            <fieldset>
+            <fieldset class="sorting-select">
               <legend>Сортировка:</legend>
-              <select class="sorting-type" name="sorting-type">
+
+                <select class="sorting-type" name="sorting-type">
                 <option selected value="popular">по популярности</option>
-                <option value="cheap_first">сначала недорогие</option>
-                <option value="expensive_first">сначала дорогие</option>
+                <option value="cheap-first">сначала недорогие</option>
+                <option value="expensive-first">сначала дорогие</option>
                 <option value="fatness">по жирности</option>
               </select>
+
             </fieldset>
             <div class="price-options">
               <div class="price-controls">
