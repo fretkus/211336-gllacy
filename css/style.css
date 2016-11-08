@@ -43,7 +43,7 @@ body > input[type="radio"] {
 .slider {
   margin-bottom: 20px;
   position: relative;
-  padding-top: 500px;
+  padding-top: 552px;
   text-align: center;
   color: #ffffff;
 }
@@ -89,7 +89,7 @@ body > input[type="radio"] {
 
 .slider-controls {
   position: absolute;
-  left: 258px;
+  left: 0;
   bottom: 42px;
   z-index: 20;
   font-size: 0;
@@ -188,9 +188,9 @@ body > input[type="radio"] {
 }
 
 .navigation a {
+  position: relative;
   display: inline-block;
   vertical-align: top;
-  position: relative;
   color: #ffffff;
   text-decoration: none;
   font-size: 16px;
@@ -382,7 +382,7 @@ body > input[type="radio"] {
   display: none;
 }
 
-.search-form > input[type="search"]{
+.search-form > input[type="search"] {
   width: 311px;
   height: 44px;
   box-sizing: border-box;
@@ -392,12 +392,13 @@ body > input[type="radio"] {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: rgba(153, 153, 153, 0.5);
+  color: #999999;
 }
 
 .search-form input[type="search"]:hover {
   padding: 9px 13px;
   border: 2px solid rgba(178, 178, 178, 0.52);
+  color: #323232;
 }
 
 .search-form input[type="search"]:focus {
@@ -443,7 +444,6 @@ body > input[type="radio"] {
 .search-loupe:hover {
   background-color: #f8f7f4;
   border-radius: 100px;
-  color: #323232;
 }
 
 .search-loupe::before {
@@ -543,16 +543,18 @@ body > input[type="radio"] {
   border-radius: 5px;
   padding: 10px 14px;
   margin: 0 0 20px 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: rgba(153, 153, 153, 0.5);
+  color: #999999;
 }
 
 .login-form input[type="email"]:hover,
 .login-form input[type="password"]:hover {
   padding: 9px 13px;
   border: 2px solid rgba(178, 178, 178, 0.52);
+  color: #323232;
+  font-weight: 700;
 }
 
 .login-form input[type="email"]:focus,
@@ -929,7 +931,9 @@ body > input[type="radio"] {
 /* end cart popup */
 
 .worktime {
-  padding-bottom: 7px;
+  position: absolute;
+  top: 73px;
+  right: 0;
   outline: 1px solid red;
 }
 
@@ -950,6 +954,7 @@ body > input[type="radio"] {
 
 .offers-free {
   width: 1146px;
+  margin-top: 20px;
 }
 
 .free-left {
@@ -1169,7 +1174,7 @@ body > input[type="radio"] {
   background: url("../img/texture-bg.jpg") repeat -10px -22px;
   border-radius: 15px;
   padding: 25px 19px 7px 19px;
-  margin-top: 27px;
+  margin-top: 44px;
   z-index: 10;
   outline: 2px solid red;
 }
@@ -1883,7 +1888,7 @@ body > input[type="radio"] {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
-  margin-top: -29px;
+  margin-top: 23px;
 }
 
 .breadcrumbs .raquo {
@@ -1912,7 +1917,7 @@ body > input[type="radio"] {
 
 h1 {
   margin: 0;
-  margin-top: -31px;
+  margin-top: 5px;
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
