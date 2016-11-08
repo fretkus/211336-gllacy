@@ -2288,7 +2288,7 @@ input[type="checkbox"]:checked + label::before {
   border: none;
 }
 
-.pagination a:focus {
+.pagination a:active {
   background-color: rgba(255, 255, 255, 1);
   color: #000000;
   border-radius: 50%;
@@ -2309,6 +2309,15 @@ input[type="checkbox"]:checked + label::before {
   padding: 0;
 }
 
+.pagination a:first-child:hover,
+.pagination a:last-child:hover {
+  background-color: transparent;
+}
+
+.pagination a:last-child:active {
+  background-color: transparent;
+}
+
 .pagination-prev::before {
   content: "";
 	position: absolute;
@@ -2316,7 +2325,7 @@ input[type="checkbox"]:checked + label::before {
 	right: 164px;
 	width: 27px;
 	height: 27px;
-	background: url("../img/sprite.png") no-repeat -5px -864px;
+	background: url("../img/sprite.png") no-repeat -10px -864px;
   opacity: 0.2;
   outline: 1px solid red;
 }
@@ -2328,7 +2337,7 @@ input[type="checkbox"]:checked + label::before {
   right: 0;
   width: 27px;
   height: 27px;
-  background: url("../img/sprite.png") no-repeat -5px -908px;
+  background: url("../img/sprite.png") no-repeat 0 -908px;
   opacity: 1;
   outline: 1px solid red
 }
