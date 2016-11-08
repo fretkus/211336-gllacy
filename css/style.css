@@ -389,22 +389,41 @@ body > input[type="radio"] {
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
   padding: 10px 14px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  color: #999999;
+  font-weight: 700;
+  color: #323232;
 }
 
 .search-form input[type="search"]:hover {
   padding: 9px 13px;
   border: 2px solid rgba(178, 178, 178, 0.52);
-  color: #323232;
 }
 
 .search-form input[type="search"]:focus {
   padding: 9px 13px;
   border: 2px solid rgba(46, 136, 228, 0.52);
   outline: none;
+}
+
+.search-form input[type="search"]::-webkit-input-placeholder {
+  font-weight: 400;
+}
+
+.search-form input[type="search"]::-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.search-form input[type="search"]:-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.search-form input[type="search"]::-moz-placeholder {
+  font-weight: 400;
+}
+
+.search-form input[type="search"]:-moz-placeholder {
+  font-weight: 400;
 }
 
 .search-form input[type="search"]:focus::-webkit-input-placeholder {
@@ -545,16 +564,39 @@ body > input[type="radio"] {
   margin: 0 0 20px 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  color: #999999;
+  font-weight: 700;
+  color: #323232;
 }
 
 .login-form input[type="email"]:hover,
 .login-form input[type="password"]:hover {
   padding: 9px 13px;
   border: 2px solid rgba(178, 178, 178, 0.52);
-  color: #323232;
-  font-weight: 700;
+}
+
+.login-form input[type="email"]::-webkit-input-placeholder,
+.login-form input[type="password"]::-webkit-input-placeholder {
+  font-weight: 400;
+}
+
+.login-form input[type="email"]::-ms-input-placeholder,
+.login-form input[type="password"]::-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.login-form input[type="email"]:-ms-input-placeholder,
+.login-form input[type="password"]:-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.login-form input[type="email"]::-moz-placeholder,
+.login-form input[type="password"]::-moz-placeholder {
+  font-weight: 400;
+}
+
+.login-form input[type="email"]:-moz-placeholder,
+.login-form input[type="password"]:-moz-placeholder {
+  font-weight: 400;
 }
 
 .login-form input[type="email"]:focus,
@@ -564,27 +606,33 @@ body > input[type="radio"] {
   outline: none;
 }
 
-.login-form input[type="email"]:focus::-webkit-input-placeholder {
+.login-form input[type="email"]:focus::-webkit-input-placeholder,
+.login-form input[type="password"]:focus::-webkit-input-placeholder {
   font-size: 0;
 }
 
-.login-form input[type="email"]:focus::-ms-input-placeholder {
+.login-form input[type="email"]:focus::-ms-input-placeholder,
+.login-form input[type="password"]:focus::-ms-input-placeholder {
   font-size: 0;
 }
 
-.login-form input[type="email"]:focus:-ms-input-placeholder {
+.login-form input[type="email"]:focus:-ms-input-placeholder,
+.login-form input[type="password"]:focus:-ms-input-placeholder {
   font-size: 0;
 }
 
-.login-form input[type="email"]:focus::-moz-placeholder {
+.login-form input[type="email"]:focus::-moz-placeholder,
+.login-form input[type="password"]:focus::-moz-placeholder {
   font-size: 0;
 }
 
-.login-form input[type="email"]:focus:-moz-placeholder {
+.login-form input[type="email"]:focus:-moz-placeholder,
+.login-form input[type="password"]:focus:-moz-placeholder {
   font-size: 0;
 }
 
-.login-form input[type="email"] + label {
+.login-form input[type="email"] + label,
+.login-form input[type="password"] + label {
   display: none;
 }
 
@@ -597,30 +645,6 @@ body > input[type="radio"] {
   line-height: 13px;
   font-weight: 400;
   color: #5b9ddf;
-}
-
-.login-form input[type="password"]:focus::-webkit-input-placeholder {
-  font-size: 0;
-}
-
-.login-form input[type="password"]:focus::-ms-input-placeholder {
-  font-size: 0;
-}
-
-.login-form input[type="password"]:focus:-ms-input-placeholder {
-  font-size: 0;
-}
-
-.login-form input[type="password"]:focus::-moz-placeholder {
-  font-size: 0;
-}
-
-.login-form input[type="password"]:focus:-moz-placeholder {
-  font-size: 0;
-}
-
-.login-form input[type="password"] + label {
-  display: none;
 }
 
 .login-form input[type="password"]:focus + label {
@@ -1321,8 +1345,8 @@ body > input[type="radio"] {
   padding: 10px 14px;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  color: rgba(153, 153, 153, 0.5);
+  font-weight: 700;
+  color: #323232;
   border-radius: 5px;
   border: 1px solid rgba(178, 178, 178, 0.52);
 }
@@ -1336,6 +1360,26 @@ body > input[type="radio"] {
   padding: 9px 13px;
   border: 2px solid rgba(46, 136, 228, 0.52);
   outline: none;
+}
+
+.subscribe-wrapper input[type="email"]::-webkit-input-placeholder {
+  font-weight: 400;
+}
+
+.subscribe-wrapper input[type="email"]::-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.subscribe-wrapper input[type="email"]:-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.subscribe-wrapper input[type="email"]::-moz-placeholder {
+  font-weight: 400;
+}
+
+.subscribe-wrapper input[type="email"]:-moz-placeholder {
+  font-weight: 400;
 }
 
 .subscribe-wrapper input[type="email"]:focus::-webkit-input-placeholder {
@@ -1415,6 +1459,10 @@ body > input[type="radio"] {
   margin: 40px 0 20px 0;
 }
 
+.map-wrapper .container {
+  width: 1200px;
+}
+
 .map {
   position: relative;
 }
@@ -1433,8 +1481,8 @@ body > input[type="radio"] {
 
 .contacts {
   position: absolute;
-  top: 60px;
-  right: 0;
+  top: 62px;
+  right: 27px;
   width: 302px;
   min-height: 305px;
   box-sizing: border-box;
@@ -1686,16 +1734,18 @@ body > input[type="radio"] {
 /* feedback form popup */
 
 .feedback-form {
-  position: absolute;
-  top: 1700px;
-  left: 570px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -239px;
+  margin-top: -222px;
   width: 477px;
-  min-height: 442px;
-  box-sizing: border-box;
   padding: 20px 24px;
-  background: #f8f7f4;
   border-radius: 10px;
-  z-index: 20;
+  color: #323232;
+  background-color: #f8f7f4;
+  box-sizing: border-box;
+	z-index: 20;
   display: none;
 }
 
@@ -1753,8 +1803,8 @@ body > input[type="radio"] {
   padding: 10px 14px;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  color: rgba(153, 153, 153, 0.5);
+  font-weight: 700;
+  color: #323232;
   border-radius: 5px;
   border: 1px solid rgba(178, 178, 178, 0.52);
 }
@@ -1777,6 +1827,36 @@ body > input[type="radio"] {
   padding: 9px 13px;
   border: 2px solid rgba(46, 136, 228, 0.52);
   outline: none;
+}
+
+.feedback-form input[type="text"]::-webkit-input-placeholder,
+.feedback-form input[type="email"]::-webkit-input-placeholder,
+.feedback-form textarea::-webkit-input-placeholder{
+  font-weight: 400;
+}
+
+.feedback-form input[type="text"]::-ms-input-placeholder,
+.feedback-form input[type="email"]::-ms-input-placeholder,
+.feedback-form textarea::-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.feedback-form input[type="text"]:-ms-input-placeholder,
+.feedback-form input[type="email"]:-ms-input-placeholder,
+.feedback-form textarea:-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.feedback-form input[type="text"]::-moz-placeholder,
+.feedback-form input[type="email"]::-moz-placeholder,
+.feedback-form textarea::-moz-placeholder  {
+  font-weight: 400;
+}
+
+.feedback-form input[type="text"]:-moz-placeholder,
+.feedback-form input[type="email"]:-moz-placeholder,
+.feedback-form textarea:-moz-placeholder {
+  font-weight: 400;
 }
 
 .feedback-form input[type="text"]:focus::-webkit-input-placeholder,
