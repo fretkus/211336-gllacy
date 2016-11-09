@@ -2116,51 +2116,41 @@ legend {
 
 .fatness-options label:hover::before,
 .topping-options label:hover::before {
-  box-shadow: inset 0 0 0 1px #ffffff;
+	box-shadow: inset 0 0 0 1px #ffffff;
+}
+
+input[type="radio"]:disabled + label::before {
+	content: "";
+	position: absolute;
+  top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+input[type="radio"]:disabled:checked + label::after {
+	content: "";
+  position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 12px;
+	height: 12px;
+	background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
 }
 
 input[type="radio"]:checked + label::after {
 	content: "";
-	position: absolute;
+  position: absolute;
 	top: 4px;
 	left: 4px;
 	width: 12px;
 	height: 12px;
 	background-color: #ffffff;
   border-radius: 50%;
-}
-
-input[type="checkbox"]:checked + label::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 18px;
-	height: 18px;
-  background: url("../img/sprite.png") no-repeat center;
-  background-position: -16px -216px;
-}
-
-input[type="checkbox"]:checked:disabled + label::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 18px;
-	height: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: url("../img/sprite.png") no-repeat center;
-  background-position: -57px -216px;
-}
-
-input[type="checkbox"]:disabled + label::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 18px;
-	height: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .topping-options label::before {
@@ -2171,6 +2161,40 @@ input[type="checkbox"]:disabled + label::before {
 	height: 18px;
 	border: 1px solid #ffffff;
   border-radius: 5px;
+}
+
+input[type="checkbox"]:disabled + label::before {
+	content: "";
+	position: absolute;
+  top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+input[type="checkbox"]:disabled:checked + label::after {
+	content: "";
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
+  background: url("../img/sprite.png") no-repeat center;
+  background-position: -56px -215px;
+}
+
+input[type="checkbox"]:checked + label::after {
+	content: "";
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
+  background: url("../img/sprite.png") no-repeat center;
+  background-position: -15px -215px;
 }
 
 .filters-two label {
