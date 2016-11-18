@@ -432,38 +432,8 @@ img {
   font-weight: 400;
 }
 
-.search-form input[type="search"]:focus::-webkit-input-placeholder {
-  font-size: 0;
-}
-
-.search-form input[type="search"]:focus::-ms-input-placeholder {
-  font-size: 0;
-}
-.search-form input[type="search"]:focus:-ms-input-placeholder {
-  font-size: 0;
-}
-
-.search-form input[type="search"]:focus::-moz-placeholder {
-  font-size: 0;
-}
-
-.search-form input[type="search"]:focus:-moz-placeholder {
-  font-size: 0;
-}
-
-.search-form input[type="search"] + label {
+.search-form label {
   display: none;
-}
-
-.search-form input[type="search"]:focus + label {
-  display: block;
-  position: absolute;
-  top: 5px;
-  left: 30px;
-  font-size: 11px;
-  line-height: 13px;
-  font-weight: 400;
-  color: #5b9ddf;
 }
 
 .search-loupe:hover {
@@ -612,56 +582,8 @@ img {
   outline: none;
 }
 
-.login-form input[type="email"]:focus::-webkit-input-placeholder,
-.login-form input[type="password"]:focus::-webkit-input-placeholder {
-  font-size: 0;
-}
-
-.login-form input[type="email"]:focus::-ms-input-placeholder,
-.login-form input[type="password"]:focus::-ms-input-placeholder {
-  font-size: 0;
-}
-
-.login-form input[type="email"]:focus:-ms-input-placeholder,
-.login-form input[type="password"]:focus:-ms-input-placeholder {
-  font-size: 0;
-}
-
-.login-form input[type="email"]:focus::-moz-placeholder,
-.login-form input[type="password"]:focus::-moz-placeholder {
-  font-size: 0;
-}
-
-.login-form input[type="email"]:focus:-moz-placeholder,
-.login-form input[type="password"]:focus:-moz-placeholder {
-  font-size: 0;
-}
-
-.login-form input[type="email"] + label,
-.login-form input[type="password"] + label {
+.login-form label {
   display: none;
-}
-
-.login-form input[type="email"]:focus + label {
-  display: block;
-  position: absolute;
-  top: 5px;
-  left: 30px;
-  font-size: 11px;
-  line-height: 13px;
-  font-weight: 400;
-  color: #5b9ddf;
-}
-
-.login-form input[type="password"]:focus + label {
-  display: block;
-  position: absolute;
-  top: 70px;
-  left: 30px;
-  font-size: 11px;
-  line-height: 13px;
-  font-weight: 400;
-  color: #5b9ddf;
 }
 
 .enter-btn {
@@ -860,12 +782,12 @@ img {
 
 .cart-remove .remove-btn::before {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .cart-remove .remove-btn::after {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .cart-item {
@@ -1259,7 +1181,7 @@ img {
 .feature-1::before,
 .feature-2::before,
 .feature-3::before ,
-.feature-4::before  {
+.feature-4::before {
   content: "";
   position: absolute;
   top: -12px;
@@ -1399,39 +1321,8 @@ img {
   font-weight: 400;
 }
 
-.subscribe-wrapper input[type="email"]:focus::-webkit-input-placeholder {
-  font-size: 0;
-}
-
-.subscribe-wrapper input[type="email"]:focus::-ms-input-placeholder {
-  font-size: 0;
-}
-
-.subscribe-wrapper input[type="email"]:focus:-ms-input-placeholder {
-  font-size: 0;
-}
-
-.subscribe-wrapper input[type="email"]:focus::-moz-placeholder {
-  font-size: 0;
-}
-
-.subscribe-wrapper input[type="email"]:focus:-moz-placeholder {
-  font-size: 0;
-}
-
-.subscribe-wrapper input[type="email"] + label {
+.subscribe-wrapper label {
   display: none;
-}
-
-.subscribe-wrapper input[type="email"]:focus + label {
-  display: block;
-  position: absolute;
-  top: 20px;
-  left: 18px;
-  font-size: 11px;
-  line-height: 13px;
-  font-weight: 400;
-  color: #5b9ddf;
 }
 
 .subscribe-btn {
@@ -1769,17 +1660,17 @@ img {
 .feedback-form-show {
   display: block;
   -webkit-animation: bounce 0.6s;
-          animation: bounce 0.6s;
+  animation: bounce 0.6s;
 }
 
 @-webkit-keyframes bounce {
-  0%   {
+  0% {
     -webkit-transform: translateX(-2000px);
   }
-  70%  {
+  70% {
     -webkit-transform: translateX(30px);
   }
-  90%  {
+  90% {
     -webkit-transform: translateX(-10px);
   }
   100% {
@@ -1788,21 +1679,21 @@ img {
 }
 
 @keyframes bounce {
-  0%   {
+  0% {
     -webkit-transform: translateX(-2000px);
-            transform: translateX(-2000px);
+    transform: translateX(-2000px);
   }
-  70%  {
+  70% {
     -webkit-transform: translateX(30px);
-            transform: translateX(30px);
+    transform: translateX(30px);
   }
-  90%  {
+  90% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px);
   }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -1858,12 +1749,12 @@ img {
 
 .feedback-btn-close::before {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .feedback-btn-close::after {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .feedback-form input[type="text"],
@@ -1897,7 +1788,7 @@ img {
 
 .feedback-form input[type="text"]:focus,
 .feedback-form input[type="email"]:focus,
-.feedback-form textarea:focus  {
+.feedback-form textarea:focus {
   padding: 9px 13px;
   border: 2px solid rgba(46, 136, 228, 0.52);
   outline: none;
@@ -1933,63 +1824,8 @@ img {
   font-weight: 400;
 }
 
-.feedback-form input[type="text"]:focus::-webkit-input-placeholder,
-.feedback-form input[type="email"]:focus::-webkit-input-placeholder,
-.feedback-form textarea:focus::-webkit-input-placeholder {
-  font-size: 0;
-}
-
-.feedback-form input[type="text"]:focus::-ms-input-placeholder,
-.feedback-form input[type="email"]:focus::-ms-input-placeholder,
-.feedback-form textarea:focus::-ms-input-placeholder {
-  font-size: 0;
-}
-
-.feedback-form input[type="text"]:focus:-ms-input-placeholder,
-.feedback-form input[type="email"]:focus:-ms-input-placeholder,
-.feedback-form textarea:focus:-ms-input-placeholder {
-  font-size: 0;
-}
-
-.feedback-form input[type="text"]:focus::-moz-placeholder,
-.feedback-form input[type="email"]:focus::-moz-placeholder,
-.feedback-form textarea:focus::-moz-placeholder {
-  font-size: 0;
-}
-
-.feedback-form input[type="text"]:focus:-moz-placeholder,
-.feedback-form input[type="email"]:focus:-moz-placeholder,
-.feedback-form textarea:focus:-moz-placeholder {
-  font-size: 0;
-}
-
-.feedback-form input[type="text"] + label,
-.feedback-form input[type="email"] + label,
-.feedback-form textarea + label {
+.feedback-form label {
   display: none;
-}
-
-.feedback-form input[type="text"]:focus + label,
-.feedback-form input[type="email"]:focus + label,
-.feedback-form textarea:focus + label {
-  display: block;
-  position: absolute;
-  top: 57px;
-  left: 40px;
-  font-size: 11px;
-  line-height: 13px;
-  font-weight: 400;
-  color: #5b9ddf;
-}
-
-.feedback-form input[type="email"]:focus + label {
-  top: 127px;
-  left: 40px;
-}
-
-.feedback-form textarea:focus + label {
-  top: 199px;
-  left: 40px;
 }
 
 .feedback-btn-send {
@@ -2140,8 +1976,8 @@ legend {
   border: none;
   outline: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .sorting-select select:hover {
