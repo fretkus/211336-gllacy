@@ -270,7 +270,7 @@ img {
   border: none;
 }
 
-.dropdown-nav li:first-child a {
+.catalog-title a {
   padding-top: 16px;
   font-weight: bold;
   border-radius: 10px 10px 0 0;
@@ -293,7 +293,7 @@ img {
   border-radius: 0 0 10px 10px ;
 }
 
-.navigation li:first-child:hover .dropdown-nav {
+.dropdown:hover .dropdown-nav {
   display: block;
 }
 
@@ -922,7 +922,7 @@ img {
   width: 560px;
   min-height: 210px;
   box-sizing: border-box;
-  background: #9b283f url("../img/offer-bg-1.jpg") no-repeat -28px -95px;
+  background: #9b283f url("../img/offer-bg-1.jpg");
   border-radius: 15px;
   padding: 15px 22px 22px 17px;
 }
@@ -932,7 +932,7 @@ img {
   width: 560px;
   min-height: 210px;
   box-sizing: border-box;
-  background: #653f30 url("../img/offer-bg-2.jpg") no-repeat -219px -105px;
+  background: #653f30 url("../img/offer-bg-2.jpg");
   border-radius: 15px;
   padding: 15px 22px 22px 17px;
 }
@@ -1135,7 +1135,7 @@ img {
 .about-gllacy {
   width: 1146px;
   box-sizing: border-box;
-  background: url("../img/texture-bg.jpg") repeat -10px -22px;
+  background: #ece2c9 url("../img/texture-bg.jpg") repeat -10px -22px;
   border-radius: 15px;
   padding: 25px 19px 7px 19px;
   margin-top: 44px;
@@ -1144,38 +1144,33 @@ img {
 
 .about-gllacy h3 {
   margin: 0;
+  margin-bottom: 20px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
   color: #323232;
 }
 
-.features-left {
-  float: left;
-  width: 540px;
-  margin-top: 5px;
+.features {
+  font-size: 0;
 }
 
-.features-right {
-  float: right;
-  width: 540px;
-  margin-top: 5px;
-}
-
-.features-left,
-.features-right p {
+.features p {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: 400;
   color: #323232;
+  width: 480px;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-left: 56px;
 }
 
-.feature-1,
-.feature-2,
-.feature-3,
-.feature-4 {
-  position: relative;
-  margin-left: 55px;
+.features p:nth-child(2n) {
+  margin-left: 85px;
 }
 
 .feature-1::before,
@@ -1192,20 +1187,15 @@ img {
 }
 
 .feature-2::before {
-  background: url("../img/sprite.png") no-repeat -15px -1037px;
+  background: url("../img/sprite.png") no-repeat -15px -454px;
 }
 
 .feature-3::before {
-  background: url("../img/sprite.png") no-repeat -15px -454px;
+  background: url("../img/sprite.png") no-repeat -15px -1037px;
 }
 
 .feature-4::before {
   background: url("../img/sprite.png") no-repeat -15px -958px;
-}
-
-.feature-2,
-.feature-4 {
-  margin-top: 23px;
 }
 
 /* end about gllacy */
@@ -1376,11 +1366,11 @@ img {
 
 .map {
   position: relative;
-}
-
-.map img {
   width: 1200px;
   height: 429px;
+  background-image: url("../img/bg-map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .interactive-map {
@@ -2037,17 +2027,6 @@ input[type="radio"]:disabled + label::before {
   box-shadow: none;
 }
 
-input[type="radio"]:disabled:checked + label::after {
-	content: "";
-  position: absolute;
-	top: 4px;
-	left: 4px;
-	width: 12px;
-	height: 12px;
-	background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
-}
-
 input[type="radio"]:checked + label::after {
 	content: "";
   position: absolute;
@@ -2079,17 +2058,6 @@ input[type="checkbox"]:disabled + label::before {
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 5px;
   box-shadow: none;
-}
-
-input[type="checkbox"]:disabled:checked + label::after {
-	content: "";
-  position: absolute;
-	top: 0;
-	left: 0;
-	width: 18px;
-	height: 18px;
-  background: url("../img/sprite.png") no-repeat center;
-  background-position: -56px -215px;
 }
 
 input[type="checkbox"]:checked + label::after {
